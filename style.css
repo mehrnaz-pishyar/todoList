@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #4a08b2;
+    color: white;
+    font-family: futura;
+}
+.main-container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 700px;
+}
+.header {
+    margin-bottom: 20px;
+}
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.addTask {
+    background: #f23434;
+    border: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    float: right;
+}
+.newTask {
+    width: calc(100% - 100px);
+    margin-top: 8px;
+    padding: 15px;
+    background: rgba(0, 0, 0, .2);
+    border: 1px solid #222;
+    outline: none;
+    color: #fff;
+}
+.newTask::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, .6);
+}
+.newTask:-moz-placeholder {
+   /* Firefox 18- */
+    color: rgba(255, 255, 255, .6);
+}
+.newTask::-moz-placeholder {
+   /* Firefox 19+ */
+    color: rgba(255, 255, 255, .6);
+}
+.newTask:-ms-input-placeholder {
+    color: rgba(255, 255, 255, .6);
+}
+.newTask:active, .newTask:hover, .newTask:focus {
+    background: rgba(0, 0, 0, .3);
+}
+.listArea {
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid #222;
+    padding: 0;
+    cursor: pointer;
+}
+.listArea li {
+    list-style: none;
+    padding: 20px;
+    line-height: 1;
+}
+.listArea li button {
+    float: right;
+    background: rgba(0, 0, 0, .3);
+    font-size: 10px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    line-height: 1.5;
+    margin-top: -4px;
+}
+.listArea li button:hover {
+    background: #f23434;
+}
+.completeTask {
+    background: #28ba3f;
+}
+.deleteTask {
+    border: 1px solid #232323;
+}
+
+.todo {
+    margin: 0.5rem;
+    background:rgba(0, 0, 0, .3);
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.trash-btn {
+    float: right;
+    background: rgba(0, 0, 0, .3);
+    font-size: 10px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    line-height: 1.5;
+    margin-top: -4px;
+}
